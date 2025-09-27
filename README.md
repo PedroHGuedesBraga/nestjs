@@ -20,6 +20,9 @@
 </p>
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## AO BAIXAR
+ Dar pnpm install
+ após isso, rodar e mandar as requisições !
 
 ## Description
 
