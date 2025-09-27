@@ -3,9 +3,9 @@ import { SecretariaService } from './secretaria.service';
 import { SecretariaController } from './secretaria.controller';
 import { Secretaria } from './entities/secretaria.entity';
 import { TypeOrmModule } from '@nestjs/typeorm';
-
+import { GerenteModule } from 'src/gerente/gerente.module';
 @Module({
-  imports:[TypeOrmModule.forFeature([Secretaria])],
+  imports:[TypeOrmModule.forFeature([Secretaria,]), GerenteModule],
   controllers: [SecretariaController],
   providers: [SecretariaService],
   exports: [TypeOrmModule],
