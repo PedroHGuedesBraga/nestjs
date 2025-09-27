@@ -4,9 +4,6 @@ export class CreateSecretariaDto {
     nome:string
 
     @IsString()
-    gerente:string
-
-    @IsString()
     contrato:string
 
     

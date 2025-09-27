@@ -12,7 +12,6 @@ export class SecretariaService {
   async create(createSecretariaDto: CreateSecretariaDto): Promise<Secretaria> {
     const secretaria: Secretaria = new Secretaria();
     secretaria.nome = createSecretariaDto.nome;
-    secretaria.gerente = createSecretariaDto.gerente;
     return await this.secretariaRepository.save(secretaria);
   }
 

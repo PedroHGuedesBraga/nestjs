@@ -11,10 +11,6 @@ export class Secretaria {
   @Column({ type: 'varchar' })
   nome: string;
   
-//Uma Secretaria Vai te um e somente uma secretaria    
-  @Column({ type: 'varchar' })
-  gerente: string;
-
   
   @OneToMany(() => Contrato, (contrato) => contrato.secretaria)
   contratos: Contrato[];
