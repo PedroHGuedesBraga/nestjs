@@ -21,7 +21,7 @@ import { Gerente } from './gerente/entities/gerente.entity';
       database: 'mydatabase',
       entities: [Item, Contrato, Secretaria,Gerente], // <<< apenas aqui
       synchronize: true,
-      logging: true,
+      
     }),
     ItemModule,
     ContratoModule,
