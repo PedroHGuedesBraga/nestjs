@@ -23,7 +23,7 @@ export class Contrato {
   @Column({ type: 'int' })
   itensQuantidade: number;
 
-  @ManyToOne(() => Secretaria, (secretaria) => secretaria.contratos)
+  @ManyToOne(() => Secretaria, (secretaria) => secretaria.contratos, { onDelete: 'CASCADE' })
   secretaria: Secretaria;  // ⬅ aqui
   
   @OneToMany(() => Item, (item) => item.contrato)

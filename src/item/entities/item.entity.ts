@@ -16,7 +16,7 @@ export class Item {
   @Column({ type: 'int' })
   quantidadeItem: number;
 
-  @Column({ type: 'int' })
+  @Column({ type: 'decimal' })
   precoUnitario: number;
 
   @Column({ type: 'date' })
